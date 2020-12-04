@@ -14,9 +14,9 @@ class thankyou extends BaseController {
 
 // configure client settings
         $config = new GpEcomConfig();
-        $config->merchantId = "dimppytest";
+        $config->merchantId = "dev6477683901871736483";
         $config->accountId = "internet";
-        $config->sharedSecret = "sEcr3t";
+        $config->sharedSecret = "2Rmgm7nxEv";
         $config->serviceUrl = "https://pay.sandbox.realexpayments.com/pay";
 
         $service = new HostedService($config);

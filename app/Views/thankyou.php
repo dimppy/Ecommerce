@@ -29,7 +29,7 @@ include 'header.php';
 </div>
 
 <?php include 'footer.php'; ?>
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
     $(document).ready(function () {
         $.getJSON("Charge", function (jsonFromRequestEndpoint) {
@@ -37,4 +37,4 @@ include 'header.php';
         });
     });
 
-</script>
+</script>-->
