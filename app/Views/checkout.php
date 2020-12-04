@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <?php include 'header.php'; ?>
-<!-- Page Content -->
-<!-- Banner Starts Here -->
 <div class="heading-page header-text">
     <section class="page-heading">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-content">
-                        <h4>Checkout</h4>
-                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <h2>Checkout</h2>
                     </div>
                 </div>
             </div>
@@ -17,12 +14,8 @@
     </section>
 </div>
 
-<!-- Banner Ends Here -->
-
 <section class="contact-us">
     <div class="container">
-        <br>
-        <br>
 
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
@@ -59,7 +52,8 @@
                                 <?php $sub_total += $total ?>
                             </tr>
 
-                        <?php endforeach;
+                            <?php
+                        endforeach;
                     endif;
                     ?>
                 </table>    
@@ -69,15 +63,19 @@
         <div class="inner-content">
             <div class="contact-us">
                 <div class="contact-form">
-                    <form action="thankyou" method="post">
-                        <div class="clearfix">
-                            <strong> Sub Total : <?php echo '$' . $sub_total; ?></strong>
-                            <button type="submit" class="filled-button pull-right">PAY NOW</button>
-                        </div>
-                    </form>
+                    <div class="clearfix">
+                        <strong class="filled-button pull-left"> Sub Total : <?php echo '$' . $sub_total; ?></strong>
+                        <strong class="filled-button pull-right"> <button type="submit" id="paynow" class="main-button">Checkout</button></strong>
+                    </div>
+                    <br>
                 </div>
+                <iframe id="payment" name="payment" width="100%" height="500" style="border:0;display:hidden"></iframe>
             </div>
         </div>
+
+
     </div>
 </section>
+
 <?php include 'footer.php'; ?>
+ 

@@ -34,6 +34,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/', 'Product-details::index');
 $routes->get('/', 'Checkout::index');
 $routes->get('/', 'Contact::index');
+$routes->get('/', 'Payment::index');
+$routes->get('/', 'Charge::index');
 
 /**
  * --------------------------------------------------------------------
